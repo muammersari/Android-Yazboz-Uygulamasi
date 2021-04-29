@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--YAZBOZ EKRANI-->
+
+    <FrameLayout
+        android:id="@+id/yazbozekrani"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_arkaplan"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_elsayisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/siyah" />
+
+                <View
+                    android:layout_width="4px"
+                    android:layout_height="match_parent"
+                    android:background="@color/siyah"></View>
+
+                <TextView
+                    android:id="@+id/txt_soniki_fark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/siyah" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.88"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oyumcu_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/oyuncu_ismi"
+                    android:gravity="center|center_horizontal"
+                    android:text="1oyuncu 1"
+                    android:textColor="@color/siyah"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/oyumcu_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/oyuncu_ismi"
+                    android:gravity="center|center_horizontal"
+                    android:text="2oyuncu 2"
+                    android:textColor="@color/siyah"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/oyumcu_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/oyuncu_ismi"
+                    android:gravity="center|center_horizontal"
+                    android:text="3Oyuncu 3"
+                    android:textColor="@color/siyah"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/oyumcu_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/oyuncu_ismi"
+                    android:gravity="center|center_horizontal"
+                    android:text="4oyuncu 4"
+                    android:textColor="@color/siyah"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <!--SAYILARIN YAZDIĞI ALAN-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/liste1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kenalik"
+                    android:gravity="center_horizontal">
+
+                    <ListView
+                        android:id="@+id/lt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:divider="@color/siyah"
+                        android:dividerHeight="0dp"></ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liste2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kenalik"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/siyah"
+                        android:dividerHeight="0dp"></ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liste3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kenalik"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/siyah"
+                        android:dividerHeight="0dp"></ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liste4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kenalik"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/siyah"
+                        android:dividerHeight="0dp"></ListView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.92"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hesap_sonucu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kenalik"
+                    android:gravity="center"
+                    android:textColor="@color/siyah"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/hesap_sonucu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kenalik"
+                    android:gravity="center"
+                    android:textColor="@color/siyah"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/hesap_sonucu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kenalik"
+                    android:gravity="center"
+                    android:textColor="@color/siyah"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/hesap_sonucu4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kenalik"
+                    android:gravity="center"
+                    android:textColor="@color/siyah"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+            <!--HESAPLA BUTONU-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.87">-->
+
+            <!--<Button-->
+            <!--android:id="@+id/button_toplam_hesapla"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="HESAPLA" />-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--HESAP MAKİNSEİ EKRANI-->
+
+    <FrameLayout
+        android:id="@+id/hesapmakinesiekrani"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buton_oyuncuekle"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/kenalik"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7.6"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oyuncu_adi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal"
+                    android:textColor="@color/beyaz"
+                    android:textSize="24dp" />
+
+                <Button
+                    android:id="@+id/layout_kapat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:layout_weight="5"
+                    android:text="X"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="7.5">
+
+                <Button
+                    android:id="@+id/button_oyun"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_yesil"
+                    android:text="OYUN"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/button_okey"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_yesil"
+                    android:text="OKEY"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/button_tur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_yesil"
+                    android:text="TUR"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/button_gosterge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="#cb332d"
+                    android:text="GÖSTERGE"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buton_banko"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="3"
+                    android:background="@color/color_mavi"
+                    android:text="BANKO"
+                    android:textColor="@color/beyaz" />
+
+                <EditText
+                    android:id="@+id/sonuc_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1.05"
+                    android:background="@drawable/radius"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:gravity="right|center"
+                    android:hint="00"
+                    android:inputType="number"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/siyah" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bir"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="1"
+                        android:text="1"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/iki"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="2"
+                        android:text="2"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/uc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="3"
+                        android:text="3"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/sil"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="C"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/dort"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="4"
+                        android:text="4"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/bes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="5"
+                        android:text="5"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/alti"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="6"
+                        android:text="6"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/carpma_islemi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="X"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/yedi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="7"
+                        android:text="7"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/sekiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="8"
+                        android:text="8"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/dokuz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="numbersClick"
+                        android:tag="9"
+                        android:text="9"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/esittir"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="="
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/sifir"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:onClick="numbersClick"
+                        android:tag="0"
+                        android:text="0"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/yazboza_ekle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="YAZBOZA EKLE"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!--BANKO BİLGİLERİ EKRANI-->
+
+    <FrameLayout
+        android:id="@+id/banko_islemleri_frm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/buton_oyuncuekle"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/buton_banko_islemleri_kapat"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal"
+                    android:text="X"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/text_banko_islem_bilgileri"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/beyaz"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal">
+
+                    <Button
+                        android:id="@+id/buton_banko_yaz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/color_yesil"
+                        android:text="BANKO YAZ" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal">
+
+                    <Button
+                        android:id="@+id/buton_banko_oldur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/colorRed"
+                        android:text="BANKO ÖLDÜR" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal">
+
+                    <Button
+                        android:id="@+id/buton_banko_iptalet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/beyaz"
+                        android:text="BANKO İPTAL" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!--OYUNCU İSİMLERİNİN GİRİLDİĞİ ALAN-->
+
+    <FrameLayout
+        android:id="@+id/oyuncu_isim_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/siyah"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/okey__logo">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:paddingTop="20dp">
+
+                <EditText
+                    android:id="@+id/o_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/buton_oyuncuekle"
+                    android:gravity="center|center_horizontal"
+                    android:hint="Oyuncu 1"
+                    android:textColor="@color/color_Sari"
+                    android:textColorHint="@color/sari_hint" />
+
+                <EditText
+                    android:id="@+id/o_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buton_oyuncuekle"
+                    android:gravity="center|center_horizontal"
+                    android:hint="Oyuncu 2"
+                    android:textColor="@color/color_Sari"
+                    android:textColorHint="@color/sari_hint" />
+
+                <EditText
+                    android:id="@+id/o_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buton_oyuncuekle"
+                    android:gravity="center|center_horizontal"
+                    android:hint="Oyuncu 3"
+                    android:textColor="@color/color_Sari"
+                    android:textColorHint="@color/sari_hint" />
+
+                <EditText
+                    android:id="@+id/o_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buton_oyuncuekle"
+                    android:gravity="center|center_horizontal"
+                    android:hint="Oyuncu 4"
+                    android:textColor="@color/color_Sari"
+                    android:textColorHint="@color/sari_hint" />
+
+                <Button
+                    android:id="@+id/oyuncu_ekle"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/radius"
+                    android:text="Oyuncuları Ekle"
+                    android:textColor="@color/siyah" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Nasıl Kullanılır ?"
+                    android:textColor="@color/beyaz"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:gravity="center"
+                    android:text="YellowMobile"
+                    android:textColor="@color/color_Sari" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>

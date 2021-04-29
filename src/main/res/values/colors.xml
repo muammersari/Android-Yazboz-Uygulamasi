@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="beyaz">#ffffff</color>
+    <color name="siyah">#000000</color>
+    <color name="colorRed">#ab181d</color>
+    <color name="color_acikyesil">#79b42e</color>
+    <color name="color_yesil">#5ac23a</color>
+    <color name="color_Sari">#e1c600</color>
+    <color name="color_arkaplan">#f2eabf</color>
+    <color name="sari_hint">#5b5425</color>
+    <color name="color_mavi">#0e3097</color>
+    <color name="color_acik_kirmizi">#fa948f</color>
+    <color name="color_su_yesili">#e2f2aa</color>
+
+
+</resources>
