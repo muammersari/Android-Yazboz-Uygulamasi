@@ -1,5 +1,5 @@
 # Android-Yazboz-Uygulamasi
-Düz Okey, 101 Okey, Batak gibi 4 kişilik Oyunlarda Kullanılabilir.
+Düz Okey, 101 Okey, Banko Okey, Batak gibi 4 kişilik Oyunlarda Kullanılabilir.
 
 - Bu uygulamada oyuncuya sayı ekleyebilir veya silebilirsiniz.
 - Oyuncu isimlerini değiştirebilir veya oyun içinde oyuncu isimlerini güncelle diyerek oyuncu isimlerini güncelleyebilirsiniz.
