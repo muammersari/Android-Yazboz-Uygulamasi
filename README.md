@@ -24,5 +24,5 @@ Düz Okey, 101 Okey, Banko Okey, Batak gibi 4 kişilik Oyunlarda Kullanılabilir
 - Sesli tepki butonuna basıldığında oyuncu 1000 den fazla sayı yediğinde sesli mesaj verilir. fakat daha sonradan ses mesajı silinmiştir ve çalışmamaktadır.
   Kodlarda nasıl yapılacağı bellidir. istenirse sesli mesaj eklenebilir.
   
-  KULLANILAN SİSTEM -> Android Studio ortamında geliştirilmiştir.
+  KULLANILAN SİSTEM -> Android Studio ortamında java ile geliştirilmiştir.
   
